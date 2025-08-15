@@ -80,8 +80,31 @@ export default [
         varinha: "Freixo e pelo de unicórnio, 32cm",
         mascote: "Nenhum",
         patrono: "Não conhecido",
-        especialidade: "Quadribol (Apanhadora)",
+        especialidade: "Cavalheirismo",
     },
+
+    {
+        id: 9,
+        nome: "Bellatrix Lestrange",
+        casa: "Sonserina",
+        ano: 6,
+        varinha: "Nogueira e fibra de coração de dragão, 32cm",
+        mascote: "Nenhum",
+        patrono: "Não conhecido",
+        especialidade: "Arte das Trevas",
+    },
+
+    {
+        id: 10,
+        nome: "Minerva McGonagall",
+        casa: "Grifinória",
+        ano: 9,
+        varinha: "Abeto e fibra de coração de dragão, 24cm",
+        mascote: "Gato",
+        patrono: "Gato",
+        especialidade: "Transfiguração",
+    },
+
 
 
 
