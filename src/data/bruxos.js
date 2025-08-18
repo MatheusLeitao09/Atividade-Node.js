@@ -104,7 +104,60 @@ export default [
         patrono: "Gato",
         especialidade: "Transfiguração",
     },
+    {
+        id: 11,
+        nome: "Rúbeo Hagrid",
+        casa: "Grifinória",
+        ano: null,
+        varinha: "Carvalho e núcleo desconhecido, 40cm (quebrada)",
+        mascote: "Canino e Bicuço",
+        patrono: "Nenhum",
+        especialidade: "Cuidado de Criaturas Mágicas",
+    },
 
+    {
+        id: 12,
+        nome: "Severo Snape",
+        casa: "Sonserina",
+        ano: null,
+        varinha: "Madeira de tília e núcleo desconhecido, 33cm",
+        mascote: "Nenhum",
+        patrono: "Corça",
+        especialidade: "Poções e Oclumência",
+    },
+
+    {
+        id: 13,
+        nome: "Sirius Black",
+        casa: "Grifinória",
+        ano: null,
+        varinha: "Não conhecida",
+        mascote: "Nenhum (forma de cão animago)",
+        patrono: "Cão",
+        especialidade: "Animago e Duelos",
+    },
+
+    {
+        id: 14,
+        nome: "Alvo Dumbledore",
+        casa: "Grifinória",
+        ano: null,
+        varinha: "Sabugueiro e núcleo de pelo de testrálio, 38cm",
+        mascote: "Fênix (Fawkes)",
+        patrono: "Fênix",
+        especialidade: "Feitiços avançados e Sabedoria",
+    },
+    
+    {
+        id: 15,
+        nome: "Lorde Voldemort",
+        casa: "Sonserina",
+        ano: null,
+        varinha: "Teixo e pena de fênix, 34cm",
+        mascote: "Cobra (Nagini)",
+        patrono: "Nenhum",
+        especialidade: "Magia das Trevas",
+    },
 
 
 
