@@ -14,6 +14,7 @@ app.get("/bruxos", (req, res) => {
 });
 
 // Rota GET by ID - A estrela do show! ⭐
+
 app.get("/bruxos/:id", (req, res) => {
     // Pega o ID da URL
     const id = parseInt(req.params.id);
@@ -40,6 +41,7 @@ app.get("/bruxos/:id", (req, res) => {
 });
 
 // Rota para buscar TODOS (para comparar)
+
 app.get("/bruxos", (req, res) => {
     res.json({
         success: true,
@@ -51,6 +53,7 @@ app.get("/bruxos", (req, res) => {
 
 
 // Buscar o bruxo pelo nome
+
 app.get("/bruxos/nome/:nome",  (req, res) =>  {
     const nomeBusca = req.params.nome.toLowerCase();
     const bruxosEncontrados = bruxos.filter(b => b.nome.toLowerCase().includes(nomeBusca));
@@ -91,6 +94,7 @@ app.get("/bruxos/casa/:casa", (req, res) => {
             message: `${bruxosDaCasa.length} bruxo(s) encontrado da casa "${req.params.casa}"!`,
             data: bruxosDaCasa
         });
+        
     } else {
         res.status(404).json ({
             success: false,
