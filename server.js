@@ -5,25 +5,126 @@ const app = express();
 const PORT = 3000;
 const { bruxos, casas, varinhas, animais, pocoes } = dados;
 
-// 3 novas rotas
+// Novas rotas
+
+app.get("/casas", (req, res) => {
+
+    if (casas.length > 0 ) {
+       res.status(200).json(casas);
+    
+    } else {
+        res.status(404).json({
+            mensagem: "Nenhuma casa encontrada!"
+        })
+    }
+    });
+
+
 app.get("/varinhas", (req, res) => {
-    res.json(varinhas);
-  });
+
+    if (varinhas.length > 0 ) {
+       res.status(200).json(varinhas);
+    
+    } else {
+        res.status(404).json({
+            mensagem: "Nenhuma varinha encontrada!"
+        })
+    }
+    });
+
   
-  app.get("/animais", (req, res) => {
-    res.json(animais);
-  });
+  
+app.get("/animais", (req, res) => {
+    
+    if (animais.length > 0 ) {
+        res.status(200).json(animais);
+     
+     } else {
+         res.status(404).json({
+             mensagem: "Nenhum animal encontrado!"
+         })
+     }
+     });
+
+
   
   app.get("/pocoes", (req, res) => {
-    res.json(pocoes);
-  });
-  
+    
+    if (pocoes.length > 0 ) {
+        res.status(200).json(pocoes);
+     
+     } else {
+         res.status(404).json({
+             mensagem: "Nenhuma poção encontrada!"
+         })
+     }
+     });
+
+// Novas rotas por ID
+
+app.get("/varinhas/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const varinha = varinhas.find(b => b.id === id);
+    
+    if (!varinha) {
+        return res.status(404).json({
+            success: false,
+            message: "Varinha não encontrada! 🔍"
+        });
+    }
+    
+    res.json({
+        success: true,
+        message: "Varinha encontrado!",
+        data: varinha
+    });
+});
+
+
+app.get("/animais/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const animal = animais.find(b => b.id === id);
+    
+    if (!animal) {
+        return res.status(404).json({
+            success: false,
+            message: "Animal não encontrado! 🔍"
+        });
+    }
+    
+    res.json({
+        success: true,
+        message: "Animal encontrado!",
+        data: animal
+    });
+});
+
+app.get("/pocoes/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const pocao = pocoes.find(b => b.id === id);
+    
+    if (!pocao) {
+        return res.status(404).json({
+            success: false,
+            message: "Poção não encontrada! 🔍"
+        });
+    }
+    
+    res.json({
+        success: true,
+        message: "Poção encontrado!",
+        data: pocao
+    });
+});
+
+
   
 app.get("/", (req, res) => {
     res.send("Bem vindo ao Mundo de Harry Potter!");
 });
 
 // Criar a rota GET Buxos
+
 app.get("/bruxos", (req, res) => {
     res.json(bruxos);
 });
