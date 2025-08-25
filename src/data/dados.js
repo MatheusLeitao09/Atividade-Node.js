@@ -22,38 +22,38 @@ const bruxos = [
     },
    
     {
-    id: 3,
-    nome: "Ron Weasley",
-    casa: "Grifinória",
-    ano: 7,
-    varinha: "Salgueiro e crina de unicórnio, 35cm",
-    mascote: "Rato (Perebas)",
-    patrono: "Terrier Jack Russell",
-    especialidade: "Xadrez Bruxo",
-    vivo: true
+         id: 3,
+        nome: "Ron Weasley",
+        casa: "Grifinória",
+        ano: 7,
+        varinha: "Salgueiro e crina de unicórnio, 35cm",
+        mascote: "Rato (Perebas)",
+        patrono: "Terrier Jack Russell",
+        especialidade: "Xadrez Bruxo",
+        vivo: true
 
     },
     {
     id: 4,
-    nome: "Draco Malfoy",
-    casa: "Sonserina",
-    ano: 7,
-    varinha: "Espinheiro e crina de unicórnio, 25cm",
-    mascote: "Coruja (não nomeada)",
-    patrono: "Desconhecido",
-    especialidade: "Ser irritante",
-    vivo: false
+        nome: "Draco Malfoy",
+        casa: "Sonserina",
+        ano: 7,
+        varinha: "Espinheiro e crina de unicórnio, 25cm",
+        mascote: "Coruja (não nomeada)",
+        patrono: "Desconhecido",
+        especialidade: "Ser irritante",
+        vivo: false
     },
     {
     id: 5,
-    nome: "Luna Lovegood",
-    casa: "Corvinal",
-    ano: 6,
-    varinha: "Madeira de cerejeira e núcleo desconhecido",
-    mascote: "Nenhum",
-    patrono: "Lebre",
-    especialidade: "Ver criaturas imaginárias (ou não) 👻",
-    vivo: true
+        nome: "Luna Lovegood",
+        casa: "Corvinal",
+        ano: 6,
+        varinha: "Madeira de cerejeira e núcleo desconhecido",
+        mascote: "Nenhum",
+        patrono: "Lebre",
+        especialidade: "Ver criaturas imaginárias (ou não) 👻",
+        vivo: true
     },
     ];
 
@@ -73,11 +73,11 @@ const casas = [
         animal: "Serpente"
     },
     {
-         id: 3,
+        id: 3,
         nome: "Cornival",
         fundador: "Romena Ravenclaw",
-         cores: "Azul e Bronze",
-         animal: "Águia"
+        cores: "Azul e Bronze",
+        animal: "Águia"
     },
     {
         id: 4,
@@ -93,29 +93,29 @@ const casas = [
 const varinhas = [
     {
 
-    id: 1,
-    material: "Azevinho",
-    nucleo: "Pena de Fênix",
-    comprimento: "28cm"
+        id: 1,
+        material: "Azevinho",
+        nucleo: "Pena de Fênix",
+        comprimento: "28cm"
     },
     {
-    id: 2,
-    material: "Videira",
-    nucleo: "Fibra de Coração de Dragão",
-    comprimento: "27cm"
+        id: 2,
+        material: "Videira",
+        nucleo: "Fibra de Coração de Dragão",
+        comprimento: "27cm"
     },
     {
-    id: 3,
-    material: "Salgueiro",
-    nucleo: "Pelo de Unicórnio",
-    comprimento: "35cm"
+        id: 3,
+        material: "Salgueiro",
+        nucleo: "Pelo de Unicórnio",
+        comprimento: "35cm"
 
     },
     {
-    id: 4,
-    material: "Carvalho Inglês",
-    nucleo: "Pelo de Testrálio",
-    comprimento: "32cm"
+        id: 4,
+        material: "Carvalho Inglês",
+        nucleo: "Pelo de Testrálio",
+        comprimento: "32cm"
     }
 
     
