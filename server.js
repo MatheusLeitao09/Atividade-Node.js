@@ -1,9 +1,24 @@
 import express from "express";
-import bruxos from "./src/data/bruxos.js";
+import dados from "./src/data/dados.js"
 
 const app = express();
 const PORT = 3000;
+const { bruxos, casas, varinhas, animais, pocoes } = dados;
 
+// 3 novas rotas
+app.get("/varinhas", (req, res) => {
+    res.json(varinhas);
+  });
+  
+  app.get("/animais", (req, res) => {
+    res.json(animais);
+  });
+  
+  app.get("/pocoes", (req, res) => {
+    res.json(pocoes);
+  });
+  
+  
 app.get("/", (req, res) => {
     res.send("Bem vindo ao Mundo de Harry Potter!");
 });
